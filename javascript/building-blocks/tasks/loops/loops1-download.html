@@ -30,7 +30,12 @@
     const list = document.createElement('ul');
 
     // Add your code here
-
+    for(let ar of myArray)
+    {
+      let li = document.createElement("li");
+      li.appendChild(document.createTextNode(ar)) ;
+      list.append(li);
+    }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
